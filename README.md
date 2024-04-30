@@ -1,3 +1,4 @@
+[![Build Status](https://app.travis-ci.com/sunflowercactus/lab04.svg?token=ZKuaH6W5sCjAp1m4YkJJ&branch=master)](https://app.travis-ci.com/github/sunflowercactus/lab04)
 # lab03
 ```sh
 hex@hex-VirtualBox:~/sunflowercactus/workspace$  export GITHUB_USERNAME=sunflowercactus
