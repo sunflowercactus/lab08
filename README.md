@@ -1,5 +1,5 @@
-[![Build Status](https://app.travis-ci.com/sunflowercactus/lab04.svg?token=ZKuaH6W5sCjAp1m4YkJJ&branch=master)](https://app.travis-ci.com/github/sunflowercactus/lab04)
-# lab04
+[![Build Status](https://app.travis-ci.com/sunflowercactus/lab05.svg?token=ZKuaH6W5sCjAp1m4YkJJ&branch=master)](https://app.travis-ci.com/github/sunflowercactus/lab05)
+# lab05
 ```sh
 hex@hex-VirtualBox:~$ export GITHUB_USERNAME=sunflowercactus
 
@@ -26,9 +26,9 @@ hex@hex-VirtualBox:~/sunflowercactus/workspace$ sudo apt install ruby-full
 
 hex@hex-VirtualBox:~/sunflowercactus/workspace$ sudo gem install travis
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace$ git clone git@github.com:sunflowercactus/lab03.git projects/lab04
+hex@hex-VirtualBox:~/sunflowercactus/workspace$ git clone git@github.com:sunflowercactus/lab03.git projects/lab05
 
-Клонирование в «projects/lab04»...
+Клонирование в «projects/lab05»...
 remote: Enumerating objects: 32, done.
 remote: Counting objects: 100% (32/32), done.
 remote: Compressing objects: 100% (22/22), done.
@@ -36,17 +36,17 @@ remote: Total 32 (delta 4), reused 28 (delta 3), pack-reused 0
 Получение объектов: 100% (32/32), 10.26 КиБ | 3.42 МиБ/с, готово.
 Определение изменений: 100% (4/4), готово.
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace$ cd projects/lab04
+hex@hex-VirtualBox:~/sunflowercactus/workspace$ cd projects/lab05
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ git remote remove origin
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ git remote remove origin
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ git remote add origin git@github.com:sunflowercactus/lab04.git
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ git remote add origin git@github.com:sunflowercactus/lab05.git
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$  cat > .travis.yml <<EOF
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$  cat > .travis.yml <<EOF
 > language: cpp
 > EOF
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ cat >> .travis.yml <<EOF
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ cat >> .travis.yml <<EOF
 > 
 > script:
 > - cmake -H. -B_build -DCMAKE_INSTALL_PREFIX=_install
@@ -54,7 +54,7 @@ hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ cat >> .travis.ym
 > - cmake --build _build --target install
 > EOF
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ cat >> .travis.yml <<EOF
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ cat >> .travis.yml <<EOF
 > 
 > addons:
 >   apt:
@@ -65,19 +65,19 @@ hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ cat >> .travis.ym
 >       - cmake-data
 > EOF
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ ex -sc '1i|[![Build Status](https://app.travis-ci.com/sunflowercactus/lab04.svg?token=ZKuaH6W5sCjAp1m4YkJJ&branch=master)](https://app.travis-ci.com/github/sunflowercactus/lab04)' -cx README.md
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ ex -sc '1i|[![Build Status](https://app.travis-ci.com/sunflowercactus/lab05.svg?token=ZKuaH6W5sCjAp1m4YkJJ&branch=master)](https://app.travis-ci.com/github/sunflowercactus/lab05)' -cx README.md
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ git add .travis.yml
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ git add .travis.yml
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ git add README.md
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ git add README.md
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ git commit -m"added CI"
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ git commit -m"added CI"
 
 [master 654807b] added CI
  2 files changed, 15 insertions(+)
  create mode 100644 .travis.yml
 
-hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ git push origin master
+hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab05$ git push origin master
 
 Перечисление объектов: 36, готово.
 Подсчет объектов: 100% (36/36), готово.
@@ -86,6 +86,6 @@ hex@hex-VirtualBox:~/sunflowercactus/workspace/projects/lab04$ git push origin m
 Запись объектов: 100% (36/36), 10.75 КиБ | 10.75 МиБ/с, готово.
 Всего 36 (изменения 6), повторно использовано 30 (изменения 4)
 remote: Resolving deltas: 100% (6/6), done.
-To github.com:sunflowercactus/lab04.git
+To github.com:sunflowercactus/lab05.git
  * [new branch]      master -> master
 ```
