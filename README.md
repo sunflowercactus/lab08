@@ -3,7 +3,7 @@
 ```sh
 hex@hex-VirtualBox:~$ export GITHUB_USERNAME=sunflowercactus
 
-hex@hex-VirtualBox:~$ GITHUB_TOKEN=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
+
 
 hex@hex-VirtualBox:~$ cd ${GITHUB_USERNAME}/workspace
 
