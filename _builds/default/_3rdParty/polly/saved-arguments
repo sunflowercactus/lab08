@@ -1,0 +1,1 @@
+"cmake" "-H." "-B/home/hex/sunflowercactus/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/home/hex/sunflowercactus/workspace/projects/lab07/tools/polly/default.cmake"
